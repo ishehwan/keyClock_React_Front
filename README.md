@@ -1,11 +1,11 @@
-*KDOOBU Frontend
+# Frontend
 React (Vite + MUI) 기반의 프론트엔드 애플리케이션입니다.
 
-*주요 기능
+# 주요 기능
 Role 기반 접근 제어 (RBAC)
 Keycloak과 연동하여 사용자의 역할(Role)에 따라 페이지 접근을 제어합니다.
 
-*지원하는 역할
+# 지원하는 역할
 admin: 관리자
 
 union
@@ -18,7 +18,7 @@ coop_storage
 
 user
 
-*구현된 기능
+# 구현된 기능
 ProtectedRoute 컴포넌트: 역할 기반 접근 제어를 처리하는 고차 컴포넌트(HOC)
 
 자동 리다이렉트: 권한이 없는 페이지 접근 시 /dashboard로 이동
@@ -29,7 +29,7 @@ ProtectedRoute 컴포넌트: 역할 기반 접근 제어를 처리하는 고차 
 
 로그인 체크: 로그인하지 않은 경우 로그인 페이지로 리다이렉트
 
-기술 스택
+# 기술 스택
 React 18 + TypeScript
 
 Vite
@@ -42,7 +42,8 @@ Redux Toolkit
 
 Keycloak (React Keycloak Web 연동)
 
-*프로젝트구조
+# 프로젝트구조
+```bash
 src/
 ├── router/
 │   ├── ProtectedRoute.tsx
@@ -58,8 +59,9 @@ src/
 │       └── userSlice.ts
 └── components/
     └── Layout.tsx
+``` 
 
-*실행방법
+## 실행방법
 
 # 의존성 설치
 npm install
