@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Silent SSO Check</title>
+</head>
+<body>
+    <script>
+        try {
+            // Keycloak이 기대하는 형식으로 URL 전달
+            parent.postMessage(location.href, location.origin);
+        } catch (e) {
+            console.error('Silent SSO check error:', e);
+        }
+    </script>
+</body>
+</html> 
